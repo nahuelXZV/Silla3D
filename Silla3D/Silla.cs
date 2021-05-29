@@ -8,18 +8,18 @@ using OpenTK.Graphics.OpenGL;
 
 namespace Silla3D
 {
-    class Silla{
+    class Silla : IObjeto{
         float x, y, z;
         float w, h, l;
         double ab, at, hb, hp, ha, ht, lt, lm;
 
         /*
-          x = posicion en el eje x
-          y = posicion en el eje y
-          z = posicion en el eje z
-          w = ancho de la silla
-          h = alto de la silla
-          l = largo de la silla
+            x = posicion en el eje x
+            y = posicion en el eje y
+            z = posicion en el eje z
+            w = ancho de la silla
+            h = alto de la silla
+            l = largo de la silla
         */
 
         //Tamaño por defecto
@@ -118,7 +118,6 @@ namespace Silla3D
             GL.End();
 
             // pata 3 ---------------------------------------------------------------
-
             GL.Begin(PrimitiveType.Quads);
             GL.Vertex3(x - ab, y - hb, z - lt);
             GL.Vertex3(x - at, y - hb, z - lt);
@@ -221,7 +220,6 @@ namespace Silla3D
             GL.End();
 
             //espaldar --------------------------------------------------------------------
-
             GL.Begin(PrimitiveType.Quads);
             GL.Vertex3(x - ab, y + ha, z + lt);
             GL.Vertex3(x - at, y + ha, z + lt);
@@ -256,10 +254,6 @@ namespace Silla3D
             GL.Vertex3(x - at, y + ht, z - lt);
             GL.Vertex3(x - at, y + ht, z + lt);
             GL.End();
-
-
         }
-
-
     }
 }

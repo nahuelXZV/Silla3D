@@ -11,6 +11,9 @@ namespace Silla3D
 {
     class Controlador : GameWindow{
 
+        IObjeto silla1 = new Silla(10, -1, 1, 6, 15, 10);
+        IObjeto silla2 = new Silla(-5, -5, -7);
+
         public Controlador() : base(740, 740, OpenTK.Graphics.GraphicsMode.Default, "Silla"){
 
         }
@@ -28,9 +31,6 @@ namespace Silla3D
            // GL.Rotate(-20, 5.0, 0.0, 0.0);
             GL.PushMatrix();
 
-            Silla silla1 = new Silla(10, -1, 1, 6, 10, 10);
-            Silla silla2 = new Silla(-5, -5, -7);
-
             silla1.paint();
             silla2.paint();
 
@@ -43,7 +43,7 @@ namespace Silla3D
             GL.Viewport(0, 0, Width, Height);
             GL.MatrixMode(MatrixMode.Projection);
             GL.LoadIdentity();
-            Matrix4 matrix = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), (float)(Width / Height), 0.01f, 300.0f);
+            Matrix4 matrix = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), (float)(Width / Height), 20.0f, 300.0f);
             GL.LoadMatrix(ref matrix);
             GL.MatrixMode(MatrixMode.Modelview);
             base.OnResize(e);

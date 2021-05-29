@@ -8,7 +8,6 @@ namespace Silla3D
 {
     static class Program
     {
-
         static void Main()
         {
             Controlador ctrl = new Controlador();
