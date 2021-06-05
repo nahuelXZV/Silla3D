@@ -8,19 +8,8 @@ using OpenTK.Graphics.OpenGL;
 
 namespace Silla3D
 {
-    class Silla : IObjeto{
-        float x, y, z;
-        float w, h, l;
+    class Silla : Objeto{
         double ab, at, hb, hp, ha, ht, lt, lm;
-
-        /*
-            x = posicion en el eje x
-            y = posicion en el eje y
-            z = posicion en el eje z
-            w = ancho de la silla
-            h = alto de la silla
-            l = largo de la silla
-        */
 
         //Tamaño por defecto
         public Silla(float x, float y, float z)
@@ -49,10 +38,10 @@ namespace Silla3D
             lt = l * 0.5;
             lm = l * 0.315;
         }
-
-        public void paint()
+        public override void paint()
         {
             // pata 1
+            GL.Color4(0.5, 0.5, 0.5, 0.05);
             GL.Begin(PrimitiveType.Quads);
             GL.Vertex3(x - ab, y - hb, z + lt);
             GL.Vertex3(x - at, y - hb, z + lt);
@@ -177,6 +166,7 @@ namespace Silla3D
 
 
             //asiento----------------------------------------------------------------------
+            GL.Color4(0.0, 0.0, 0.8, 0.05);
             GL.Begin(PrimitiveType.Quads);
             GL.Vertex3(x - ab, y - hp, z + lt);
             GL.Vertex3(x + ab, y - hp, z + lt);
@@ -220,6 +210,7 @@ namespace Silla3D
             GL.End();
 
             //espaldar --------------------------------------------------------------------
+            GL.Color4(0.8, 0.0, 0.0, 0.05);
             GL.Begin(PrimitiveType.Quads);
             GL.Vertex3(x - ab, y + ha, z + lt);
             GL.Vertex3(x - at, y + ha, z + lt);
@@ -254,6 +245,16 @@ namespace Silla3D
             GL.Vertex3(x - at, y + ht, z - lt);
             GL.Vertex3(x - at, y + ht, z + lt);
             GL.End();
+        }
+
+        public override void move()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void rotate()
+        {
+            throw new NotImplementedException();
         }
     }
 }

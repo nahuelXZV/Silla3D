@@ -1,13 +1,13 @@
+C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.Properties.Resources.resources
+C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\bin\Debug\Silla3D.exe.config
 C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\bin\Debug\Silla3D.exe
 C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\bin\Debug\Silla3D.pdb
 C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\bin\Debug\OpenTK.dll
 C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\bin\Debug\OpenTK.pdb
 C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\bin\Debug\OpenTK.xml
-C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.csprojAssemblyReference.cache
-C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.Properties.Resources.resources
-C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.csproj.GenerateResource.cache
-C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.csproj.CopyComplete
 C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.exe
 C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.pdb
+C:\Users\HP\Desktop\Grafica\Proyectos\3erProyecto\Silla3D\Silla3D\obj\Debug\Silla3D.csprojAssemblyReference.cache

@@ -11,7 +11,7 @@ namespace Silla3D
         static void Main()
         {
             Controlador ctrl = new Controlador();
-            ctrl.Run(1 / 60);
+            ctrl.Run(1 / 50);
         }
     }
 }

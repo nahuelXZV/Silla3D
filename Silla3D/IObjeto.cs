@@ -9,6 +9,7 @@ namespace Silla3D
     interface IObjeto
     {
         void paint();
-
+        void move();
+        void rotate();
     }
 }

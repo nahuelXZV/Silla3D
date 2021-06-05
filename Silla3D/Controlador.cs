@@ -11,9 +11,10 @@ namespace Silla3D
 {
     class Controlador : GameWindow{
 
-        IObjeto silla1 = new Silla(10, -1, 1, 6, 15, 10);
-        IObjeto silla2 = new Silla(-5, -5, -7);
-
+        Objeto silla1 = new Silla(10, -1, 1, 6, 15, 10);
+        Objeto silla2 = new Silla(-11, -5, -7);
+        Objeto mesa = new Mesa(1,2,3,10,10,15);
+        //int an = 0,angulo = 0;
         public Controlador() : base(740, 740, OpenTK.Graphics.GraphicsMode.Default, "Silla"){
 
         }
@@ -28,22 +29,30 @@ namespace Silla3D
             GL.LoadIdentity();
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
             GL.Translate(0.0, 0.0, -45.0);
-           // GL.Rotate(-20, 5.0, 0.0, 0.0);
+         //   GL.Rotate(tita(), 0.0, 10.0, 0.0);
             GL.PushMatrix();
 
-            silla1.paint();
             silla2.paint();
+            mesa.paint();
 
             GL.PopMatrix();
             Context.SwapBuffers();
             base.OnRenderFrame(e);
         }
 
+        //public int tita()
+     //   {
+      //      an++;
+      //      if (an % 10 == 0)
+     //           angulo++;
+      //      return angulo;
+      //  }
+        
         protected override void OnResize(EventArgs e){
             GL.Viewport(0, 0, Width, Height);
             GL.MatrixMode(MatrixMode.Projection);
             GL.LoadIdentity();
-            Matrix4 matrix = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), (float)(Width / Height), 20.0f, 300.0f);
+            Matrix4 matrix = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(80.0f), (float)(Width / Height), 20.0f, 300.0f);
             GL.LoadMatrix(ref matrix);
             GL.MatrixMode(MatrixMode.Modelview);
             base.OnResize(e);
